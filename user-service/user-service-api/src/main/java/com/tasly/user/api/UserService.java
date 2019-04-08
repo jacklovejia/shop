@@ -19,6 +19,6 @@ public interface UserService {
 
 
     @RequestMapping(value = "/{uid}",method = RequestMethod.GET)
-    UserDTO get(@PathVariable("uid") Long uid);
+    String get(@PathVariable("uid") Long uid);
 
 }

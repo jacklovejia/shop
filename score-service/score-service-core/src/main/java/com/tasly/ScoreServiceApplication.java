@@ -7,7 +7,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.netflix.feign.EnableFeignClients;
 import org.springframework.context.annotation.ImportResource;
 
-@ImportResource({ "classpath:bytetcc-supports-springcloud.xml" })
+//@ImportResource({ "classpath:bytetcc-supports-springcloud.xml" })
 @EnableFeignClients
 @EnableDiscoveryClient
 @EnableEurekaClient

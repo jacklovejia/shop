@@ -29,24 +29,24 @@ public class UserServiceImpl implements UserService {
     public UserDTO getByUsernameAndPasswordDTO(UsernameAndPasswordDTO usernameAndPasswordDTO) {
 
         User user = new User();
-        user.setAge(24);
-        user.setName("张三");
-        user.setPassword("admin");
-        user.setUsername("admin" );
+//        user.setAge(24);
+//        user.setName("张三");
+//        user.setPassword("admin");
+//        user.setUsername("admin" );
 
         return transfrom(UserDTO.class,userReposity.save(user));
     }
 
     @Override
-    public UserDTO get(@PathVariable("uid") Long uid) {
+    public String get(@PathVariable("uid") Long uid) {
 
         User user = new User();
-        user.setId(uid);
-        user.setAge(24);
-        user.setName("张三");
-        user.setPassword("admin");
-        user.setUsername("admin");
+//        user.setId(uid);
+//        user.setAge(24);
+//        user.setName("张三");
+//        user.setPassword("admin");
+//        user.setUsername("admin");
 
-        return transfrom(UserDTO.class,userReposity.save(user));
+        return "ha"+ uid;
     }
 }
